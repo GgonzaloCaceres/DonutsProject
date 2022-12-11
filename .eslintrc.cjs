@@ -20,5 +20,7 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['react'],
-  rules: {}
+  rules: {
+    'space-before-function-paren': ['error', 'never']
+  }
 }
