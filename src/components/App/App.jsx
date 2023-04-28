@@ -1,7 +1,12 @@
 import './App.css'
+import Catalogue from '../Catalogue'
 
 function App() {
-  return <></>
+  return (
+    <>
+      <Catalogue></Catalogue>
+    </>
+  )
 }
 
 export default App
