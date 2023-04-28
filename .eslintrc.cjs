@@ -11,8 +11,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
-    'eslint-config-prettier',
-    'standard'
+    'standard',
+    'eslint-config-prettier'
   ],
   overrides: [],
   parserOptions: {
@@ -20,7 +20,5 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['react'],
-  rules: {
-    'space-before-function-paren': ['error', 'never']
-  }
+  rules: {}
 }
