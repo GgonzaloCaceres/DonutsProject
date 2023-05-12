@@ -1,5 +1,5 @@
-import styles from './Catalogue.module.css'
 import useDonuts from '../../lib/hooks/useDonut.js'
+import style from './Catalogue.module.css'
 
 export const Catalogue = () => {
   const { donuts, isLoading, error } = useDonuts()
@@ -8,16 +8,20 @@ export const Catalogue = () => {
 
   return (
     <>
-      {donuts.map(donut => (
-        <p key={donut.id}>
-          <img src={donut.image_url} />
-          {donut.name}
-          {donut.description}
-          {Object.keys(donut).map(donutProp => (
-            <span key={donutProp}> {donut[donutProp]}</span>
-          ))}
-        </p>
-      ))}
+      <div className={style.container}>
+        {donuts.map(donut => (
+          <div className={style.donutItem} key={donut.id}>
+            <p>{donut.name}</p>
+            <img src={donut.image_url} />
+            <ul>
+              {donut.types.map(type => (
+                <li key={type.id}>{type.title}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+        <div className={style.donutBox}></div>
+      </div>
     </>
   )
 }
