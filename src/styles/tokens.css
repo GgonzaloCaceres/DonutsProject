@@ -1,0 +1,12 @@
+:root {
+  --holywood-cerise: #e31c93;
+  --celestial-blue: #009ddb;
+  --pigment-green: #00a83e;
+  --silver: #bebebe;
+  --white: #ffffff;
+  --white-text: #ffffff;
+  --normal-text: #000;
+  --muted-text: #bebebe
+  --normal-shadow: box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 
+  --text-hover-shadow: box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 4px 16px 16px rgba(0, 0, 0, 0.125);  
+}
